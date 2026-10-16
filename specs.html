@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <title> Google Glass</title>
+    <link rel="stylesheet" href="_css/specs.css" />
+
+</head>
+
+<body>
+    <div id="interface">
+
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icone" src="_imagens/especificacoes.png" />
+
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="specs.html">Especificações</a></li>
+                    <li><a href="fotos.html">Fotos</a></li>
+                    <li><a href="multimidia.html">Multimídia</a></li>
+                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo">
+
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3 class="sub-titulo">Glass > Especificações</h3>
+                        <h1>Raio-X no Google Glass</h1>
+                        <h2>Gustavo Guanabara</h2>
+                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+                <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google
+                    Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+                <img id="glass-esquema" src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa"
+                    alt="Especificações da imagem" />
+                <map name="meumapa">
+
+                    <!-- bateria -->
+                    <area shape="rect" coords="179,202,270,265" href="#"
+                        onmouseover="mudaFoto('_imagens/det-bateria.jpg','bateria','Como sera carregado?','A bateria do Google Glass será carregada através de um sistema de indução, sem a necessidade de fios.')" />
+
+                    <!-- câmera -->
+                    <area shape="circle" coords="75,52,15" href="#"
+                        onmouseover="mudaFoto('_imagens/det-camera.jpg','câmera','Funcionalidades da câmera','A câmera do Google Glass permite capturar fotos a 5MP e vídeos em 720p')" />
+
+                    <!-- tela -->
+                    <area shape="rect" coords="50,198,83,86" href="#"
+                        onmouseover="mudaFoto('_imagens/det-tela.jpg','Tela','Como o mundo vai aparecer','De acordo com fontes proximas do Google, a tela do Google Glass terá uma tela de LCD ou AMOLED na parte superior e em frente dos olhos do usuário.')" />
+
+                    <!-- touch -->
+                    <area shape="circle" coords="158,243,12" href="#"
+                        onmouseover="mudaFoto('_imagens/det-touch.jpg','touch','Interface tátil','A interface tátil do Google Glass permite interagir com o dispositivo através de toques e gestos.')" />
+                </map>
+
+                <aside id="noticia-secundaria">
+                    <h1 id="titulo-info">Tela</h1>
+                    <h2 id="subtitulo-info">Como o mundo vai aparecer</h2>
+                    <p id="texto-info"> De acordo com fontes proximas do Google, a tela do Google Glass terá uma tela de
+                        LCD ou
+                        AMOLED
+                        na parte superior e em frente dos olhos do usuário. Com uso de uma camera e GPS, você pode
+                        se
+                        situar, assim como selecionar opções com o movimento de cabeça.</p>
+                    <img id="foto-tela" src="_imagens/det-tela.jpg" alt="imagemn da tela" />
+
+                </aside>
+                <footer id="rodape">Copyright @ 2013 - by Gustavo Guanabara<br>
+                    Facebook | Twitter</footer>
+            </article>
+        </section>
+        <script>
+            function mudaFoto(foto, titulo, subtitulo, texto) {
+
+                document.getElementById("foto-tela").src = foto;
+
+                document.getElementById("titulo-info").innerHTML = titulo;
+
+                document.getElementById("subtitulo-info").innerHTML = subtitulo;
+
+                document.getElementById("texto-info").innerHTML = texto;
+            }
+        </script>
+    </div>
+</body>
+
+</html>
